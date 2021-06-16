@@ -1,1 +1,1 @@
-# IBC -> Iran Blockcahin community
+# IBC -> Iran Blockchain Community
