@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v29.0.2/dist/font-face.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
     <title>لیست هشدار وب آموز</title>
 
     <style>
@@ -17,7 +18,7 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div id="app" class="container">
         <hr>
         <div class="mx-auto" style="width: 520px;">
         <div>
@@ -65,505 +66,20 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>یونیفاندز unifunds</td>
-                    <td>پانزی</td>
+
+                  <tr v-for="(item , index) in sites">
+                    <th scope="row">{{index}}</th>
+                    <td>{{item.name}}</td>
+                    <td>{{item.type}}</td>
                     <td>
-                        <a href="http://www.unifunds.com/" target="_blank">
-                            http://www.unifunds.com/
+                        <a :href="item.url" target="_blank">
+                            {{item.url}}
                         </a>
                     </td>
-                    <td></td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>وایزلینگ Wiseling</td>
-                    <td>پانزی</td>
-                    <td>
-                        <a href="http://wiseling.com/" target="_blank">
-                            http://wiseling.com/
-                        </a>
-                    </td>
-                    <td></td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>مستر دیجی کوین</td>
-                    <td>استیک ، کلود ماین</td>
-                    <td>
-                        <a href="http://mrdigicoin.io/" target="_blank">
-                            http://mrdigicoin.io/
-                        </a>
-                    </td>
-                    <td></td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>لیام توکن</td>
-                    <td>شید کوین</td>
-                    <td>
-                        <a href="http://liyamtoken.com/" target="_blank">
-                            http://liyamtoken.com/
-                        </a>
-                    </td>
-                    <td></td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td>کوین هش</td>
-                    <td>پانزی</td>
-                    <td>
-                        <a href="http://www.coin-hash.com/" target="_blank">
-                            http://www.coin-hash.com/
-                        </a>
-                    </td>
-                    <td></td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">6</th>
-                    <td>کریپتولند</td>
-                    <td>پلتفرم تبادل</td>
-                    <td>
-                        <a href="https://cryptoland.com" target="_blank">
-                            https://cryptoland.com
-                        </a>
-                    </td>
-                    <td></td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">7</th>
-                    <td>صرافی تبدیل مارکت</td>
-                    <td>پلتفرم تبادل</td>
-                    <td>
-                        <a href="https://mtabdil.com/" target="_blank">
-                            https://mtabdil.com/
-                        </a>
-                    </td>
-                    <td></td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">8</th>
-                    <td>صرافی اِی آی تریدز AiTrades</td>
-                    <td>پلتفرم تبادل</td>
-                    <td>
-                        <a href="https://aitrades.com" target="_blank">
-                            https://aitrades.com
-                        </a>
-                    </td>
-                    <td></td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">9</th>
-                    <td>صرافی آریانا</td>
-                    <td>پلتفرم تبادل</td>
-                    <td>
-                        <a href="https://aryana.io" target="_blank">
-                            https://aryana.io
-                        </a>
-                    </td>
-                    <td></td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">10</th>
-                    <td>صرافی سینکروبیت SynchroBit</td>
-                    <td>پلتفرم تبادل</td>
-                    <td>
-                        <a href="https://synchrobit.io/" target="_blank">
-                            https://synchrobit.io/
-                        </a>
-                    </td>
-                    <td></td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">11</th>
-                    <td>راتین بانک ratin bank</td>
-                    <td>پانزی</td>
-                    <td>
-                        <a href="https://www.ratinbank.com/" target="_blank">
-                            https://www.ratinbank.com/
-                        </a>
-                    </td>
-                    <td></td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">12</th>
-                    <td>جنرال تریدینگ</td>
-                    <td>پانزی</td>
-                    <td>
-                        <a href="http://general.tradings.ir" target="_blank">
-                            http://general.tradings.ir
-                        </a>
-                    </td>
-                    <td></td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">13</th>
-                    <td>توکن TWF</td>
-                    <td>شید کوین</td>
-                    <td>
-                        <a href="https://coinstwf.com/" target="_blank">
-                            https://coinstwf.com/
-                        </a>
-                    </td>
-                    <td>TWF</td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">14</th>
-                    <td>پروژه آریا کوین Araya Coin</td>
-                    <td>ICO</td>
-                    <td>
-                        <a href="https://aryacoin.io/" target="_blank">
-                            https://aryacoin.io/
-                        </a>
-                    </td>
-                    <td>AYA</td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">15</th>
-                    <td>پروپرتیک propertiq</td>
-                    <td>پانزی</td>
-                    <td>
-                        <a href="https://propertiq.io/" target="_blank">
-                            https://propertiq.io/
-                        </a>
-                    </td>
-                    <td></td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">16</th>
-                    <td>بیکس بی کوین bixbcoin</td>
-                    <td>شید کوین</td>
-                    <td>
-                        <a href="https://bixbcoin.com/" target="_blank">
-                            https://bixbcoin.com/
-                        </a>
-                    </td>
-                    <td>BXB, BXC, BXM</td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">17</th>
-                    <td>بریج اوراکل Bridge Oracle</td>
-                    <td>IEO -Oracle</td>
-                    <td>
-                        <a href="https://bridge.link" target="_blank">
-                            https://bridge.link
-                        </a>
-                    </td>
-                    <td>BRG</td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">18</th>
-                    <td>ایمپرو سلوشن impero solutions</td>
-                    <td>پانزی</td>
-                    <td>
-                        <a href="https://impero.solutions/" target="_blank">
-                            https://impero.solutions/
-                        </a>
-                    </td>
-                    <td></td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">19</th>
-                    <td>اکسکوینو</td>
-                    <td>پلتفرم تبادل - تولید شیدکوین</td>
-                    <td>
-                        <a href="https://www.excoino.com/" target="_blank">
-                            https://www.excoino.com/
-                        </a>
-                    </td>
-                    <td>EXC,excoin</td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">20</th>
-                    <td>آی ماینر</td>
-                    <td>کلود ماینینگ</td>
-                    <td>
-                        <a href="http://dedino.ir/" target="_blank">
-                            http://dedino.ir/
-                        </a>
-                    </td>
-                    <td></td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">21</th>
-                    <td>آی ام اس ماینینگ IMS Mining</td>
-                    <td>کلود ماینینگ</td>
-                    <td>
-                        <a href="https://www.imsmining.com/" target="_blank">
-                            https://www.imsmining.com/
-                        </a>
-                    </td>
-                    <td></td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">22</th>
-                    <td>آمیتیس</td>
-                    <td>پانزی</td>
-                    <td></td>
-                    <td></td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">23</th>
-                    <td>آریا نت Aryanet</td>
-                    <td>شبکه بلاکچینی</td>
-                    <td>
-                        <a href="https://aryacoin.io/" target="_blank">
-                            https://aryacoin.io/
-                        </a>
-                    </td>
-                    <td></td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">24</th>
-                    <td>آرون گروپس</td>
-                    <td>تبادل و سرمایه گذاری</td>
-                    <td>
-                        <a href="http://arongroups.co/" target="_blank">
-                            http://arongroups.co/
-                        </a>
-                    </td>
-                    <td></td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">25</th>
-                    <td>Unique Finance</td>
-                    <td>جذب سرمایه/پانزی</td>
-                    <td>
-                        <a href="https://portal.gpm.ltd" target="_blank">
-                            https://portal.gpm.ltd
-                        </a>
-                    </td>
-                    <td>UNQT</td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">26</th>
-                    <td>REEC (renewable Electronic Energy Coin)</td>
-                    <td>کلود ماینینگ</td>
-                    <td>
-                        <a href="http://coinsmining.energy/" target="_blank">
-                            http://coinsmining.energy/
-                        </a>
-                    </td>
-                    <td></td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">27</th>
-                    <td>persia exchange</td>
-                    <td>پلتفرم تبادل</td>
-                    <td>
-                        <a href="http://www.persia.exchange" target="_blank">
-                            http://www.persia.exchange
-                        </a>
-                    </td>
-                    <td></td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">28</th>
-                    <td>MTT Coin</td>
-                    <td>شید کوین</td>
-                    <td>
-                        <a href="https://mttcoin.com" target="_blank">
-                            https://mttcoin.com
-                        </a>
-                    </td>
-                    <td>MTT</td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">29</th>
-                    <td>Iran cloud mining</td>
-                    <td>کلود ماینینگ</td>
-                    <td>
-                        <a href="https://irancloudmining.com" target="_blank">
-                            https://irancloudmining.com
-                        </a>
-                    </td>
-                    <td></td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">30</th>
-                    <td>Health Care Community Token</td>
-                    <td>حوزه سلامت شید کوین</td>
-                    <td>
-                        <a href="https://healour.com/" target="_blank">
-                            https://healour.com/
-                        </a>
-                    </td>
-                    <td>HCC</td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">31</th>
-                    <td>farda exchange</td>
-                    <td>پلتفرم تبادل</td>
-                    <td>
-                        <a href="https://www.farda.exchange/" target="_blank">
-                            https://www.farda.exchange/
-                        </a>
-                    </td>
-                    <td></td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">32</th>
-                    <td>coinobit exchange</td>
-                    <td>پلتفرم تبادل</td>
-                    <td>
-                        <a href="https://coinohit.com/" target="_blank">
-                            https://coinohit.com/
-                        </a>
-                    </td>
-                    <td></td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">33</th>
-                    <td>bixb exchange</td>
-                    <td>پلتفرم تبادل</td>
-                    <td>
-                        <a href="https://www.bixb.exchange/" target="_blank">
-                            https://www.bixb.exchange/
-                        </a>
-                    </td>
-                    <td></td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">34</th>
-                    <td>AYApay</td>
-                    <td>درگاه پرداخت</td>
-                    <td>
-                        <a href="https://ayapay.aryacoin.io/" target="_blank">
-                            https://ayapay.aryacoin.io/
-                        </a>
-                    </td>
-                    <td></td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">35</th>
-                    <td>Axobank persian</td>
-                    <td>سرمایه گذاری پانزی</td>
-                    <td>
-                        <a href="https://axotrade.com/" target="_blank">
-                            https://axotrade.com/
-                        </a>
-                    </td>
-                    <td></td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">36</th>
-                    <td>AiTrades</td>
-                    <td>شیدکوین</td>
-                    <td>
-                        <a href="https://aitrades.com" target="_blank">
-                            https://aitrades.com
-                        </a>
-                    </td>
-                    <td>ATC Coin</td>
-                    <td>خرداد ۱۲, ۱۴۰۰</td>
-                    <td></td>
-                    <td></td>
+                    <td>{{item.symbol}}</td>
+                    <td>{{item.date}}</td>
+                    <td>{{item.doc}}</td>
+                    <td>{{item.group}}</td>
                   </tr>
                 </tbody>
               </table>
@@ -599,5 +115,345 @@
         </div>
       
     </div>
+    <script>
+      var vm = new Vue({
+      el: "#app",
+      data: {
+        sites: [
+          {
+              "name": "یونیفاندز unifunds",
+              "type": "پانزی",
+              "url": "http://www.unifunds.com",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "وایزلینگ Wiseling",
+              "type": "پانزی",
+              "url": "http://wiseling.com",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "مستر دیجی کوین",
+              "type": "استیک ، کلود ماین",
+              "url": "http://mrdigicoin.io",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "لیام توکن",
+              "type": "شید کوین",
+              "url": "http://liyamtoken.com",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "کوین هش",
+              "type": "پانزی",
+              "url": "http://www.coin-hash.com",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "کریپتولند",
+              "type": "پلتفرم تبادل",
+              "url": "https://cryptoland.com",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "صرافی تبدیل مارکت",
+              "type": "پلتفرم تبادل",
+              "url": "https://mtabdil.com",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "صرافی اِی آی تریدز AiTrades",
+              "type": "پلتفرم تبادل",
+              "url": "https://aitrades.com",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "صرافی آریانا",
+              "type": "پلتفرم تبادل",
+              "url": "https://aryana.io",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "صرافی سینکروبیت SynchroBit",
+              "type": "پلتفرم تبادل",
+              "url": "https://synchrobit.io",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "راتین بانک ratin bank",
+              "type": "پانزی",
+              "url": "https://www.ratinbank.com",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "جنرال تریدینگ",
+              "type": "پانزی",
+              "url": "http://general.tradings.ir",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "توکن TWF",
+              "type": "شید کوین",
+              "url": "https://coinstwf.com",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "TWF",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "پروژه آریا کوین Araya Coin",
+              "type": "ICO",
+              "url": "https://aryacoin.io",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "AYA",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "پروپرتیک propertiq",
+              "type": "پانزی",
+              "url": "https://propertiq.io",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "بیکس بی کوین bixbcoin",
+              "type": "شید کوین",
+              "url": "https://bixbcoin.com",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "BXB, BXC, BXM",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "بریج اوراکل Bridge Oracle",
+              "type": "IEO -Oracle",
+              "url": "https://bridge.link",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "BRG",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "ایمپرو سلوشن impero solutions",
+              "type": "پانزی",
+              "url": "https://impero.solutions",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "اکسکوینو",
+              "type": "پلتفرم تبادل - تولید شیدکوین",
+              "url": "https://www.excoino.com",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "EXC, excoin",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "آی ماینر",
+              "type": "کلود ماینینگ",
+              "url": "http://dedino.ir",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "آی ام اس ماینینگ IMS Mining",
+              "type": "کلود ماینینگ",
+              "url": "https://www.imsmining.com",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "آمیتیس",
+              "type": "پانزی",
+              "url": "",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "آریا نت Aryanet",
+              "type": "شبکه بلاکچینی",
+              "url": "https://aryacoin.io",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "آرون گروپس",
+              "type": "تبادل و سرمایه گذاری",
+              "url": "http://arongroups.co",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "Unique Finance",
+              "type": "جذب سرمایه/پانزی",
+              "url": "https://portal.gpm.ltd",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "UNQT",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "REEC (renewable Electronic Energy Coin)",
+              "type": "کلود ماینینگ",
+              "url": "http://coinsmining.energy",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "persia exchange",
+              "type": "پلتفرم تبادل",
+              "url": "http://www.persia.exchange",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "MTT Coin",
+              "type": "شید کوین",
+              "url": "https://mttcoin.com",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "MTT",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "Iran cloud mining",
+              "type": "کلود ماینینگ",
+              "url": "https://irancloudmining.com",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "Health Care Community Token",
+              "type": "حوزه سلامت شید کوین",
+              "url": "https://healour.com",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "HCC",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "farda exchange",
+              "type": "پلتفرم تبادل",
+              "url": "https://www.farda.exchange",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "coinobit exchange",
+              "type": "پلتفرم تبادل",
+              "url": "https://coinohit.com",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "bixb exchange",
+              "type": "پلتفرم تبادل",
+              "url": "https://www.bixb.exchange",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "AYApay",
+              "type": "درگاه پرداخت",
+              "url": "https://ayapay.aryacoin.io",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "Axobank persian",
+              "type": "سرمایه گذاری پانزی",
+              "url": "https://axotrade.com",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "",
+              "doc": "",
+              "group": ""
+          },
+          {
+              "name": "AiTrades",
+              "type": "شیدکوین",
+              "url": "https://aitrades.com",
+              "date": "خرداد ۱۲, ۱۴۰۰",
+              "symbol": "ATC Coin",
+              "doc": "",
+              "group": ""
+          }
+      ]
+      },
+      methods: {
+          show(){
+            console.log('show')
+          },
+              
+      },
+  });
+
+    </script>
 </body>
 </html>
