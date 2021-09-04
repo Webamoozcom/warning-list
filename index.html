@@ -18,14 +18,12 @@
         crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v29.0.2/dist/font-face.css" rel="stylesheet"
         type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
     <title>لیست هشدار وب آموز</title>
 
     <style>
         body {
             font-family: 'Vazir', sans-serif;
             text-align: right;
-            direction: rtl;
         }
         .table{
             display: block !important;
@@ -35,8 +33,8 @@
     </style>
 </head>
 
-<body>
-    <div id="app" class="container">
+<body dir="rtl">
+    <div class="container">
         <div class="row mt-5">
             <div class="col-md-3 col-sm-12">
                 <div class="card" style="display: flex;align-items: center;">
@@ -119,8 +117,14 @@
             </div>
         </div>
         <div class="row mt-4">
+
+            <!-- Search -->
             <div class="col-12">
-                <table class="table table-striped">
+               <input type="text" class="form-control" id="search" onkeyup="search()" placeholder="جستجو">
+            </div>
+
+            <div class="col-12 mt-4">
+                <table class="table table-striped table-responsive">
                     <thead>
                         <tr>
                             <th scope="col">#</th>
@@ -134,21 +138,6 @@
                         </tr>
                     </thead>
                     <tbody>
-
-                        <tr v-for="(item , index) in sites">
-                            <th scope="row">{{index + 1}}</th>
-                            <td>{{item.name}}</td>
-                            <td>{{item.type}}</td>
-                            <td>
-                                <a :href="item.url" target="_blank">
-                                    {{item.url}}
-                                </a>
-                            </td>
-                            <td>{{item.symbol}}</td>
-                            <td>{{item.date}}</td>
-                            <td>{{item.doc}}</td>
-                            <td>{{item.group}}</td>
-                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -161,355 +150,391 @@
         </div>
 
     </div>
-    <script>
-        var vm = new Vue({
-            el: "#app",
-            data: {
-                sites: [
-                    {
-                        "name": "یونیفاندز unifunds",
-                        "type": "پانزی",
-                        "url": "http://www.unifunds.com",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "وایزلینگ Wiseling",
-                        "type": "پانزی",
-                        "url": "http://wiseling.com",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "مستر دیجی کوین",
-                        "type": "استیک ، کلود ماین",
-                        "url": "http://mrdigicoin.io",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "لیام توکن",
-                        "type": "شید کوین",
-                        "url": "http://liyamtoken.com",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "کوین هش",
-                        "type": "پانزی",
-                        "url": "http://www.coin-hash.com",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "کریپتولند",
-                        "type": "پلتفرم تبادل",
-                        "url": "https://cryptoland.com",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "صرافی تبدیل مارکت",
-                        "type": "پلتفرم تبادل",
-                        "url": "https://mtabdil.com",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "صرافی اِی آی تریدز AiTrades",
-                        "type": "پلتفرم تبادل",
-                        "url": "https://aitrades.com",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "صرافی آریانا",
-                        "type": "پلتفرم تبادل",
-                        "url": "https://aryana.io",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "صرافی سینکروبیت SynchroBit",
-                        "type": "پلتفرم تبادل",
-                        "url": "https://synchrobit.io",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "راتین بانک ratin bank",
-                        "type": "پانزی",
-                        "url": "https://www.ratinbank.com",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "جنرال تریدینگ",
-                        "type": "پانزی",
-                        "url": "http://general.tradings.ir",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "توکن TWF",
-                        "type": "شید کوین",
-                        "url": "https://coinstwf.com",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "TWF",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "پروژه آریا کوین Araya Coin",
-                        "type": "ICO",
-                        "url": "https://aryacoin.io",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "AYA",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "پروپرتیک propertiq",
-                        "type": "پانزی",
-                        "url": "https://propertiq.io",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "بیکس بی کوین bixbcoin",
-                        "type": "شید کوین",
-                        "url": "https://bixbcoin.com",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "BXB, BXC, BXM",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "بریج اوراکل Bridge Oracle",
-                        "type": "IEO -Oracle",
-                        "url": "https://bridge.link",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "BRG",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "ایمپرو سلوشن impero solutions",
-                        "type": "پانزی",
-                        "url": "https://impero.solutions",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "اکسکوینو",
-                        "type": "پلتفرم تبادل - تولید شیدکوین",
-                        "url": "https://www.excoino.com",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "EXC, excoin",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "آی ماینر",
-                        "type": "کلود ماینینگ",
-                        "url": "http://dedino.ir",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "آی ام اس ماینینگ IMS Mining",
-                        "type": "کلود ماینینگ",
-                        "url": "https://www.imsmining.com",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "آمیتیس",
-                        "type": "پانزی",
-                        "url": "",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "آریا نت Aryanet",
-                        "type": "شبکه بلاکچینی",
-                        "url": "https://aryacoin.io",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "آرون گروپس",
-                        "type": "تبادل و سرمایه گذاری",
-                        "url": "http://arongroups.co",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "Unique Finance",
-                        "type": "جذب سرمایه/پانزی",
-                        "url": "https://portal.gpm.ltd",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "UNQT",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "REEC (renewable Electronic Energy Coin)",
-                        "type": "کلود ماینینگ",
-                        "url": "http://coinsmining.energy",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "persia exchange",
-                        "type": "پلتفرم تبادل",
-                        "url": "http://www.persia.exchange",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "MTT Coin",
-                        "type": "شید کوین",
-                        "url": "https://mttcoin.com",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "MTT",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "Iran cloud mining",
-                        "type": "کلود ماینینگ",
-                        "url": "https://irancloudmining.com",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "Health Care Community Token",
-                        "type": "حوزه سلامت شید کوین",
-                        "url": "https://healour.com",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "HCC",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "farda exchange",
-                        "type": "پلتفرم تبادل",
-                        "url": "https://www.farda.exchange",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "coinobit exchange",
-                        "type": "پلتفرم تبادل",
-                        "url": "https://coinohit.com",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "bixb exchange",
-                        "type": "پلتفرم تبادل",
-                        "url": "https://www.bixb.exchange",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "AYApay",
-                        "type": "درگاه پرداخت",
-                        "url": "https://ayapay.aryacoin.io",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "Axobank persian",
-                        "type": "سرمایه گذاری پانزی",
-                        "url": "https://axotrade.com",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "AiTrades",
-                        "type": "شیدکوین",
-                        "url": "https://aitrades.com",
-                        "date": "خرداد ۱۲, ۱۴۰۰",
-                        "symbol": "ATC Coin",
-                        "doc": "",
-                        "group": ""
-                    },
-                    {
-                        "name": "NOKON",
-                        "type": "شیدکوین",
-                        "url": "nokontoken.com",
-                        "date": "شهریور ۵, ۱۴۰۰",
-                        "symbol": "Nko",
-                        "doc": "",
-                        "group": ""
-                    }
-                ]
-            },
-            methods: {
-                show() {
-                    console.log('show')
-                },
 
-            },
-        });
+   <script>
+      const sites = [
+         {
+            "name": "یونیفاندز unifunds",
+            "type": "پانزی",
+            "url": "http://www.unifunds.com",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "وایزلینگ Wiseling",
+            "type": "پانزی",
+            "url": "http://wiseling.com",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "مستر دیجی کوین",
+            "type": "استیک ، کلود ماین",
+            "url": "http://mrdigicoin.io",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "لیام توکن",
+            "type": "شید کوین",
+            "url": "http://liyamtoken.com",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "کوین هش",
+            "type": "پانزی",
+            "url": "http://www.coin-hash.com",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "کریپتولند",
+            "type": "پلتفرم تبادل",
+            "url": "https://cryptoland.com",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "صرافی تبدیل مارکت",
+            "type": "پلتفرم تبادل",
+            "url": "https://mtabdil.com",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "صرافی اِی آی تریدز AiTrades",
+            "type": "پلتفرم تبادل",
+            "url": "https://aitrades.com",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "صرافی آریانا",
+            "type": "پلتفرم تبادل",
+            "url": "https://aryana.io",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "صرافی سینکروبیت SynchroBit",
+            "type": "پلتفرم تبادل",
+            "url": "https://synchrobit.io",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "راتین بانک ratin bank",
+            "type": "پانزی",
+            "url": "https://www.ratinbank.com",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "جنرال تریدینگ",
+            "type": "پانزی",
+            "url": "http://general.tradings.ir",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "توکن TWF",
+            "type": "شید کوین",
+            "url": "https://coinstwf.com",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "TWF",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "پروژه آریا کوین Araya Coin",
+            "type": "ICO",
+            "url": "https://aryacoin.io",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "AYA",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "پروپرتیک propertiq",
+            "type": "پانزی",
+            "url": "https://propertiq.io",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "بیکس بی کوین bixbcoin",
+            "type": "شید کوین",
+            "url": "https://bixbcoin.com",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "BXB, BXC, BXM",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "بریج اوراکل Bridge Oracle",
+            "type": "IEO -Oracle",
+            "url": "https://bridge.link",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "BRG",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "ایمپرو سلوشن impero solutions",
+            "type": "پانزی",
+            "url": "https://impero.solutions",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "اکسکوینو",
+            "type": "پلتفرم تبادل - تولید شیدکوین",
+            "url": "https://www.excoino.com",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "EXC, excoin",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "آی ماینر",
+            "type": "کلود ماینینگ",
+            "url": "http://dedino.ir",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "آی ام اس ماینینگ IMS Mining",
+            "type": "کلود ماینینگ",
+            "url": "https://www.imsmining.com",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "آمیتیس",
+            "type": "پانزی",
+            "url": "",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "آریا نت Aryanet",
+            "type": "شبکه بلاکچینی",
+            "url": "https://aryacoin.io",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "آرون گروپس",
+            "type": "تبادل و سرمایه گذاری",
+            "url": "http://arongroups.co",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "Unique Finance",
+            "type": "جذب سرمایه/پانزی",
+            "url": "https://portal.gpm.ltd",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "UNQT",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "REEC (renewable Electronic Energy Coin)",
+            "type": "کلود ماینینگ",
+            "url": "http://coinsmining.energy",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "persia exchange",
+            "type": "پلتفرم تبادل",
+            "url": "http://www.persia.exchange",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "MTT Coin",
+            "type": "شید کوین",
+            "url": "https://mttcoin.com",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "MTT",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "Iran cloud mining",
+            "type": "کلود ماینینگ",
+            "url": "https://irancloudmining.com",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "Health Care Community Token",
+            "type": "حوزه سلامت شید کوین",
+            "url": "https://healour.com",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "HCC",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "farda exchange",
+            "type": "پلتفرم تبادل",
+            "url": "https://www.farda.exchange",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "coinobit exchange",
+            "type": "پلتفرم تبادل",
+            "url": "https://coinohit.com",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "bixb exchange",
+            "type": "پلتفرم تبادل",
+            "url": "https://www.bixb.exchange",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "AYApay",
+            "type": "درگاه پرداخت",
+            "url": "https://ayapay.aryacoin.io",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "Axobank persian",
+            "type": "سرمایه گذاری پانزی",
+            "url": "https://axotrade.com",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "AiTrades",
+            "type": "شیدکوین",
+            "url": "https://aitrades.com",
+            "date": "خرداد ۱۲, ۱۴۰۰",
+            "symbol": "ATC Coin",
+            "doc": "",
+            "group": ""
+         },
+         {
+            "name": "NOKON",
+            "type": "شیدکوین",
+            "url": "nokontoken.com",
+            "date": "شهریور ۵, ۱۴۰۰",
+            "symbol": "Nko",
+            "doc": "",
+            "group": ''
+         }
+      ];
+      
 
-    </script>
+      // helpers
+      function create_url(site) {
+         return `<a href="${site.url}" target="_blank">${site.url}</a>`
+      }
+
+      function add_table_rows(sites) {
+         const tbody = document.querySelector('table.table tbody')
+
+         sites.forEach((site, index) => {
+            const row    = tbody.insertRow(index)
+            const id     = row.insertCell(0).innerHTML = index + 1
+            const name   = row.insertCell(1).innerHTML = site.name
+            const type   = row.insertCell(2).innerHTML = site.type
+            const url    = row.insertCell(3).innerHTML = create_url(site)
+            const symbol = row.insertCell(4).innerHTML = site.symbol
+            const date   = row.insertCell(5).innerHTML = site.date
+            const doc    = row.insertCell(6).innerHTML = site.doc
+            const group  = row.insertCell(7).innerHTML = site.group
+         })
+      }
+
+      function search(){
+        const input  = document.getElementById("search")
+        const table  = document.querySelector('table.table')
+        const filter = input.value.toUpperCase()
+        const tr     = table.getElementsByTagName("tr")
+
+        for(i = 0; i < tr.length; i++) {
+         td = tr[i].getElementsByTagName("td")
+         for(j=0; j<td.length; j++)
+         {
+            let tdata = td[j]
+            if(tdata) {
+               if (tdata.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                  tr[i].style.display = ""
+                  break
+               } else {
+                  tr[i].style.display = "none"
+               }
+            } 
+         }
+      }
+   }
+
+   add_table_rows(sites)
+   </script>
 </body>
 
 </html>
