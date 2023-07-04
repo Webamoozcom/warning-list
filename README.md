@@ -31,8 +31,8 @@
   
 ویرایش اولیه این لیست توسط [انجمن بلاکچین ایران](https://iranblockchain.org/) تهیه شده است.
 
-# به روزرسانی ها
-## لیست هشدار وب آموز به [PersianBlocker](https://github.com/MasterKia/PersianBlocker) اضافه شد.(۱۶ مرداد ۱۴۰۱)
+## به روزرسانی ها
+### لیست هشدار وب آموز به [PersianBlocker](https://github.com/MasterKia/PersianBlocker) اضافه شد.(۱۶ مرداد ۱۴۰۱)
 
 
 </div>
