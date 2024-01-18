@@ -31,6 +31,23 @@
   
 ویرایش اولیه این لیست توسط [انجمن بلاکچین ایران](https://iranblockchain.org/) تهیه شده است.
 
+
+## دسته بندی
+برای دسترسی راحت تر از دسته‌بندی های زیر برای یافتن موارد موردنظر خود استفاده کنید.
+
+◉ [ توکن ها](Projects/Token.md)
+
+◉ [ کوین ها](Projects/Coin.md)
+  
+◉ [ شرکت ها  ](Projects/Company.md)
+
+◉ [ اشخاص](Projects/Person.md)
+
+◉ [ پیج اینستاگرام](Projects/Instagram.md)
+
+◉ [کانال تلگرام](Projects/Telegram.md)
+
+
 ## مطالب و اخبار مرتبط با کلاهبرداری را از طریق منابع رسمی وب‌آموز دنبال کنید:
 ‌
 [وب سایت](https://www.webamooz.com/) | [کمپین حمایت و دونیت](https://www.patreon.com/Webamooz) | [یوتیوب](https://www.youtube.com/jorjandi) | [تلگرام](https://t.me/webamoozir
