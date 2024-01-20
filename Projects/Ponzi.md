@@ -13,3 +13,7 @@
 ## 
 ## لیست آدرس های اینترنتی پانزی:
 1. https://s-group.io
+2. https://www.laxsson.com/
+3. https://agigptqt.vip/
+4. https://agigptqt.run/
+5. https://agigptqt.com/
