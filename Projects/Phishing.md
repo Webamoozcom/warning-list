@@ -14,3 +14,5 @@
 ## 
 ## لیست آدرس های اینترنتی فیشینگ:
 1. https://iran-payio.com
+2. https://ethfdk.com/
+
