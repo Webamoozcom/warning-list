@@ -13,6 +13,13 @@
 
 ## 
 ## لیست آدرس های اینترنتی فیشینگ:
-1. https://iran-payio.com
-2. https://ethfdk.com/
+1. https://btccrw.com/ --> [archive](https://archive.is/fAgce)
+2. https://btcdsi.com/ --> [archive](https://archive.ph/EZOoF)
+3. https://btckio.com/ --> [archive](https://archive.ph/oWtz9)
+4. https://custodyueth.com/ --> [archive](https://archive.ph/EDyn7)
+5. https://ethfdk.com/  --> [archive](https://archive.ph/ohsKt)
+6. https://ethspecify.com/  --> [archive](https://archive.ph/lvoa5)
+7. https://iran-payio.com --> [archive](https://t.me/webamoozir/6336)
+8. https://managesats.com/ --> [archive](https://archive.ph/vJZyc)
+9. https://trativeeth.com/  --> [archive](https://archive.ph/zz83w)
 
