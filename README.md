@@ -35,9 +35,13 @@
 ## دسته بندی
 برای دسترسی راحت تر از دسته‌بندی های زیر برای یافتن موارد موردنظر خود استفاده کنید.
 
-◉ [صرافی ها](Projects/Exchange.md)
+◉ [صرافی های آنلاین](Projects/Exchange.md)
+
+◉ [پانزی و هرمی](Projects/Ponzi.md)
 
 ◉ [ارزدیجیتال و رمزارز](Projects/Crypto.md)
+
+◉ [فیشینگ](Projects/Phishing.md)
   
 ◉ [ شرکت ها  ](Projects/Company.md)
 
@@ -47,9 +51,9 @@
 
 ◉ [کانال تلگرام](Projects/Telegram.md)
 
-◉ [فیشینگ](Projects/Phishing.md)
 
-◉ [پانزی و هرمی](Projects/Ponzi.md)
+
+
 
 
 ## مطالب و اخبار مرتبط با کلاهبرداری را از طریق منابع رسمی وب‌آموز دنبال کنید:
