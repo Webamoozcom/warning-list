@@ -37,9 +37,7 @@
 
 ◉ [صرافی ها](Projects/Exchange.md)
 
-◉ [ توکن ها](Projects/Token.md)
-
-◉ [ کوین ها](Projects/Coin.md)
+◉ [ارزدیجیتال و رمزارز](Projects/Crypto.md)
   
 ◉ [ شرکت ها  ](Projects/Company.md)
 
@@ -51,7 +49,7 @@
 
 ◉ [فیشینگ](Projects/Phishing.md)
 
-◉ [پانزی](Projects/Ponzi.md)
+◉ [پانزی و هرمی](Projects/Ponzi.md)
 
 
 ## مطالب و اخبار مرتبط با کلاهبرداری را از طریق منابع رسمی وب‌آموز دنبال کنید:
