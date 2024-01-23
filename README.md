@@ -42,6 +42,8 @@
 ◉ [ارزدیجیتال و رمزارز](Projects/Crypto.md)
 
 ◉ [فیشینگ](Projects/Phishing.md)
+
+◉ [پولشویی](Projects/MoneyLaundering.md)
   
 ◉ [ شرکت ها  ](Projects/Company.md)
 
