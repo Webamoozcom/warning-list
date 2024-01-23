@@ -18,4 +18,5 @@
 4. https://agigptqt.vip/
 5. https://agigptqt.run/
 6. https://agigptqt.app/
-7. https://tradergpt.ai/ --> [archive](https://archive.is/C1Mx6)
+7. https://baghpol.com/ --> [archive](https://archive.ph/7c5oa)
+8. https://tradergpt.ai/ --> [archive](https://archive.is/C1Mx6)
