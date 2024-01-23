@@ -14,7 +14,8 @@
 ## لیست آدرس های اینترنتی پانزی:
 1. https://s-group.io
 2. https://www.laxsson.com/
-3. https://agigptqt.vip/
-4. https://agigptqt.run/
-5. https://agigptqt.com/
+3. https://agigptqt.com/ --> [archive](https://archive.ph/rMBLs)
+4. https://agigptqt.vip/
+5. https://agigptqt.run/
 6. https://agigptqt.app/
+7. https://tradergpt.ai/ --> [archive](https://archive.is/C1Mx6)
