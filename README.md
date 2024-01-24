@@ -59,10 +59,15 @@
 
 
 ## مطالب و اخبار مرتبط با کلاهبرداری را از طریق منابع رسمی وب‌آموز دنبال کنید:
-‌
-[وب سایت](https://www.webamooz.com/) | [کمپین حمایت و دونیت](https://www.patreon.com/Webamooz) | [یوتیوب](https://www.youtube.com/jorjandi) | [تلگرام](https://t.me/webamoozir
-) | [اینستاگرام](https://instagram.com/webamoozir
-)
+
+
+<div align="center">
+
+[<img width=50 height=50 src=Images/logo/website.png>](https://www.webamooz.com/) | [<img width=50 height=50 src=Images/logo/patreon.png>](https://www.patreon.com/Webamooz) | [<img width=50 height=50 src=Images/logo/telegram.png>](https://t.me/webamoozir) | [<img width=50 height=50 src=Images/logo/instagram.png>](https://instagram.com/webamoozir) | [<img width=50 height=50 src=Images/logo/youtube.png>](https://www.youtube.com/jorjandi) |
+|---|---|---|---|---|
+|وبسایت|حمایت|تلگرام|اینستاگرام|یوتیوب|
+
+</div>
 
 ## به روزرسانی ها
 ### لیست هشدار وب آموز به [PersianBlocker](https://github.com/MasterKia/PersianBlocker) اضافه شد.(۱۶ مرداد ۱۴۰۱)
