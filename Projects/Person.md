@@ -14,8 +14,14 @@
 ## 
 ## لیست کامل اشخاص کلاهبردار
 
-| **وضعیت** | **نوع جرم** | **نام شرکت** | **نام کامل** | **تصویر** |
-|---|---|---|---|---|
-| متواری | پانزی، توکن جعلی | آمیتیس | امیراکبر داداشی عین‌شیخ | <img width=100 height=100 src=../Images/Person/AkbarDadashi.jpg> |
-| متواری | خالی‌فروشی، توکن جعلی | کریپتولند، بریج اوراکل | سینا استوی | <img width=100 height=100 src=../Images/Person/SinaEstavi.jpg> |
- متواری | خالی‌فروشی، توکن جعلی | کریپتولند، بریج اوراکل | حسن گل‌محمدی | <img width=100 height=100 src=../Images/Person/HasanGolMohammadi.jpg> |
+| **وضعیت** | **نوع جرم** | **نام شرکت** | **نام کامل** | **تصویر** |**ردیف**|
+|---|---|---|---|---|---|
+| متواری | پانزی، توکن جعلی | آمیتیس | امیراکبر داداشی عین‌شیخ | <img width=100 height=100 src=../Images/Person/AkbarDadashi.jpg> | 1 |
+| متواری | خالی‌فروشی، توکن جعلی | کریپتولند، بریج اوراکل | سینا استوی | <img width=100 height=100 src=../Images/Person/SinaEstavi.jpg> | 2 |
+| متواری | خالی‌فروشی، توکن جعلی | کریپتولند، بریج اوراکل | حسن گل‌محمدی | <img width=100 height=100 src=../Images/Person/HasanGolMohammadi.jpg> | 3 |
+| متواری | پانزی، توکن جعلی | یونی‌فاندز، کریتور‌آکادمی، ورد-واید-انرژی | سیدجعفر جعفری | <img width=100 height=100 src=../Images/Person/JafarJafari.jpg> | 4 |
+| متواری | پانزی، توکن جعلی | یونی‌فاندز، کریتور‌آکادمی، ورد-واید-انرژی | بابک کاظمی | <img width=100 height=100 src=../Images/Person/BabakKazemi.jpg> | 5 |
+| متواری | پانزی، توکن جعلی | یونی‌فاندز، کریتور‌آکادمی، ورد-واید-انرژی | رضا غیاثی (قیاسی) | <img width=100 height=100 src=../Images/Person/RezaGhiasi.jpg> | 6 |
+| متواری | پانزی، توکن جعلی | یونی‌فاندز، کریتور‌آکادمی، ورد-واید-انرژی | الناز جوانشیر | <img width=100 height=100 src=../Images/Person/ElnazJavanshir.jpg> | 7 |
+| بازداشت | پانزی، توکن جعلی | یونی‌فاندز، کریتور‌آکادمی، ورد-واید-انرژی | سورنا یوشی‌زاده | <img width=100 height=100 src=../Images/Person/SourenaYoshizadeh.jpg> | 8 |
+| بازداشت | پانزی، توکن جعلی | برجاد، وکسام | سیدمحمد هادی طلوعی | <img width=100 height=100 src=../Images/Person/HadiToluiei.jpg> | 9 |
