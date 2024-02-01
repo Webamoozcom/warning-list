@@ -14,7 +14,7 @@
 ## 
 ## لیست کامل اشخاص کلاهبردار
 
-| **وضعیت** | **نوع جرم** | **نام شرکت** | **نام کامل** | **تصویر** |**ردیف**|
+| **وضعیت** | **نوع جرم** | **نام شرکت/سایت** | **نام کامل** | **تصویر** |**ردیف**|
 |---|---|---|---|---|---|
 | متواری | پانزی، توکن جعلی | آمیتیس | امیراکبر داداشی عین‌شیخ | <img width=100 height=100 src=../Images/Person/AkbarDadashi.jpg> | 1 |
 | متواری | خالی‌فروشی، توکن جعلی | کریپتولند، بریج اوراکل | سینا استوی | <img width=100 height=100 src=../Images/Person/SinaEstavi.jpg> | 2 |
@@ -25,3 +25,16 @@
 | متواری | پانزی، توکن جعلی | یونی‌فاندز، کریتور‌آکادمی، ورد-واید-انرژی | الناز جوانشیر | <img width=100 height=100 src=../Images/Person/ElnazJavanshir.jpg> | 7 |
 | بازداشت | پانزی، توکن جعلی | یونی‌فاندز، کریتور‌آکادمی، ورد-واید-انرژی | سورنا یوشی‌زاده | <img width=100 height=100 src=../Images/Person/SourenaYoshizadeh.jpg> | 8 |
 | بازداشت | پانزی، توکن جعلی | برجاد، وکسام | سیدمحمد هادی طلوعی | <img width=100 height=100 src=../Images/Person/HadiToluiei.jpg> | 9 |
+| متواری | قمار، شرط‌بندی و پولشویی |  | سعدالله امیرشقاقی | <img width=100 height=100 src=../Images/Person/SadollahAmirShaghaghi(SaitEmir).jpg> | 10 |
+| متواری | قمار، شرط‌بندی و پولشویی |  | فرشید امیرشقاقی | <img width=100 height=100 src=../Images/Person/FarshidAmirShaghaghi.jpg> | 11 |
+| متواری | قمار، شرط‌بندی و پولشویی |  | محمدرضا (ساشا) سبحانی | <img width=100 height=100 src=../Images/Person/SashaSobhani.jpg> | 12 |
+| متواری | قمار، شرط‌بندی و پولشویی |  | پویان مختاری | <img width=100 height=100 src=../Images/Person/PouyanMokhtari.jpg> | 13 |
+| بازداشت | قمار، شرط‌بندی و پولشویی |  | داوود غفاری (هزینه) | <img width=100 height=100 src=../Images/Person/DavoodGhaffari.jpg> | 14 |
+| بازداشت | قمار، شرط‌بندی و پولشویی |  | محمدکاظم تاش (مسعود ترکیبی) | <img width=100 height=100 src=../Images/Person/KazemTash.jpg> | 15 |
+| بازداشت | قمار، شرط‌بندی و پولشویی |  | میلاد حاتم آبادی فراهانی (حاتمی) | <img width=100 height=100 src=../Images/Person/MiladHatami.jpg> | 16 |
+
+
+
+
+
+
